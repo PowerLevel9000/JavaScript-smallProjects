@@ -1,22 +1,25 @@
-document.querySelectorAll('#newtask button').onclick = function(){
-  // Check if the input field is empty
+document.querySelector('#push').onclick = function(){
   if(document.querySelector('#newtask input').value.length == 0){
-    alert("Please Enter a Task");
-  } else {
-    // Create a new task element and append it to the tasks list
-    var task = document.createElement("div");
-    task.classList.add("task");
-    task.innerHTML = `
-      <span id="taskname">${document.querySelector('#newtask input').value}</span>
-      <button class="delete">
-        <i class="far fa-trash-alt"></i>
-      </button>
-    `;
-    document.querySelector('#tasks').appendChild(task);
+      alert("Please Enter a Task")
+  }
 
-    // Add a click event listener to the delete button of the new task
-    task.querySelector(".delete").addEventListener("click", function(){
-      this.parentNode.remove();
-    });
+  else{
+      document.querySelector('#tasks').innerHTML += `
+          <div class="task">
+              <span id="taskname">
+                  ${document.querySelector('#newtask input').value}
+              </span>
+              <button class="delete">
+                  <i class="far fa-trash-alt"></i>
+              </button>
+          </div>
+      `;
+
+      var current_tasks = document.querySelectorAll(".delete");
+      for(var i=0; i<current_tasks.length; i++){
+          current_tasks[i].onclick = function(){
+              this.parentNode.remove();
+          }
+      }
   }
 }
