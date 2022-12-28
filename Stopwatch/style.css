@@ -21,30 +21,23 @@
 
 html {
   box-sizing: border-box;
-
-  /* Set font size for easy rem calculations
-     * default document font size = 16px, 1rem = 16px, 100% = 16px
-     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-    */
+  /* Set font size for easy rem calculations     
+  * default document font size = 16px, 1rem = 16px, 100% = 16px     
+  * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px    */
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-/* A few media query to set some font sizes at different screen sizes.
-   * This helps automate a bit of responsiveness.
-   * The trick is to use the rem unit for size values, margin and padding.
-   * Because rem is relative to the document font size
-   * when we scale up or down the font size on the document
-   * it will affect all properties using rem units for the values.
-  */
-
-/* I am using the em unit for breakpoints
-   * The calculation is the following
-   * screen size divided by browser base font size
-   * As an example: a breakpoint at 980px
-   * 980px / 16px = 61.25em
-  */
-
+/* A few media query to set some font sizes at different screen sizes.   
+* This helps automate a bit of responsiveness.   
+* The trick is to use the rem unit for size values, margin and padding.   
+* Because rem is relative to the document font size   * when we scale up or down the font size on the document   
+* it will affect all properties using rem units for the values.  */
+/* I am using the em unit for breakpoints   
+* The calculation is the following   
+* screen size divided by browser base font size   
+* As an example: a breakpoint at 980px   
+* 980px / 16px = 61.25em  */
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -67,7 +60,6 @@ html {
 }
 
 /* Base styles */
-
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
@@ -154,63 +146,41 @@ a {
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
-
   font-weight: 500;
-
   font-size: 2.6em;
-
   text-transform: uppercase;
 }
 
-#seconds,
-#tens {
-  font-size: 2em;
+pre{
+  font-size: 3em;
 }
+
 
 button {
   -moz-border-radius: 5px;
-
   -webkit-border-radius: 5px;
-
   border-radius: 5px;
-
   -khtml-border-radius: 5px;
-
   background: #a7dbf1;
-
   color: #25282a;
-
   border: solid 1px #fff;
-
   text-decoration: none;
-
   cursor: pointer;
-
   font-size: 1.2em;
-
   padding: 18px 10px;
-
   width: 180px;
-
   margin: 10px;
-
   outline: none;
 }
 
 button:hover {
   -webkit-transition: all 0.5s ease-in-out;
-
   -moz-transition: all 0.5s ease-in-out;
-
   transition: all 0.5s ease-in-out;
-
   background: #25282a;
-
   border: solid 1px #a7dbf1;
-
   color: #a7dbf1;
 }
-
 
 .contact-section {
   display: flex;
