@@ -3,14 +3,15 @@ const apiKey = "d102ce6f8a7f8c61a416505fdeb98697";
 const main = document.getElementById('main');
 const form = document.getElementById('form');
 const search = document.getElementById('search');
-  
+const body1 = document.body
 const url = (city)=> `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d102ce6f8a7f8c61a416505fdeb98697`; 
+const container = document.getElementById("container")
 
 
 async function getWeatherByLocation(city){
      
          const resp = await fetch(url(city), {
-             origin: "cros" });
+             origin: "cors" });
          const respData = await resp.json();
      
            addWeatherToPage(respData);
@@ -28,6 +29,9 @@ async function getWeatherByLocation(city){
           <small>${data.weather[0].main}</small>
           
           `;
+
+          body1.style.background=`url(https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png), #25282A`;
+          container.classList.add("container")
 
 
         //   cleanup 
@@ -52,4 +56,3 @@ async function getWeatherByLocation(city){
         }
 
      });
-     

@@ -7,13 +7,19 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #25282A;
+  background: #25282A;
   display: flex;
   justify-content: center;
   color: #fff;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
+}
+
+.container {
+  background-color: #25282A;
+  height: 260px;
+  box-shadow: 0 0 50px rgba(0, 0, 255, 0.5);
 }
 
 input {
