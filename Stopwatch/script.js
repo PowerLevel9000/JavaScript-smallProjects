@@ -1,6 +1,6 @@
 window.onload = function () {
-  let seconds = 00; 
-  let tens = 00; 
+  let seconds = 0; 
+  let tens = 0; 
   let appendTens = document.getElementById("tens"); 
   let appendSeconds = document.getElementById("seconds"); 
   let buttonStart = document.getElementById("button-start"); 
