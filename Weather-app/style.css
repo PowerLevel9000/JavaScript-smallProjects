@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: #25282A;
+  background: #25282a;
   display: flex;
   justify-content: center;
   color: #fff;
@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #25282A;
+  background-color: #25282a;
   width: fit-content;
   height: 260px;
   box-shadow: 0 0 50px rgba(0, 0, 255, 0.5);
