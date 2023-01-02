@@ -1,6 +1,6 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -46,22 +46,6 @@ body {
   border-color: #0d75ec;
 }
 
-#newtask button {
-  position: relative;
-  float: right;
-  font-weight: 500;
-  font-size: 16px;
-  background-color: #0d75ec;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-  width: 20%;
-  height: 45px;
-  border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
-}
-
 #tasks {
   border-radius: 10px;
   width: 100%;
@@ -98,4 +82,20 @@ body {
   height: 100%;
   width: 40px;
   border-radius: 5px;
+}
+
+#newtask button {
+  position: relative;
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0d75ec;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
 }

@@ -179,17 +179,17 @@ button:hover {
   color: #f0f0f0;
 }
 
-.contact-section-header>h2 {
+.contact-section-header > h2 {
   font-size: 6rem;
 }
 
 @media (max-width: 28.75em) {
-  .contact-section-header>h2 {
+  .contact-section-header > h2 {
     font-size: 4rem;
   }
 }
 
-.contact-section-header>p {
+.contact-section-header > p {
   font-style: italic;
 }
 
