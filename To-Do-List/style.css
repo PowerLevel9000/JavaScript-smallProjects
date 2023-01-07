@@ -54,6 +54,11 @@ body {
   padding: 5px 20px;
 }
 
+.invisible {
+  display: none;
+}
+
+.error,
 .task {
   border-radius: 5px;
   align-items: center;
@@ -98,4 +103,8 @@ body {
   height: 45px;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
+}
+
+.invisible {
+  display: none;
 }
