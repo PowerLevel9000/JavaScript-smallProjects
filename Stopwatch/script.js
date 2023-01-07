@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = function () {
   let seconds = 0;
   let tens = 0;
   const appendTens = document.getElementById('tens');
@@ -8,8 +8,8 @@ window.onload = () => {
   const buttonReset = document.getElementById('button-reset');
   let Interval;
 
-  buttonStop.onclick = () => { clearInterval(Interval); };
-  buttonReset.onclick = () => {
+  buttonStop.onclick = function () { clearInterval(Interval); };
+  buttonReset.onclick = function () {
     clearInterval(Interval);
     tens = '00';
     seconds = '00';
@@ -29,7 +29,7 @@ window.onload = () => {
     }
     if (seconds > 9) { appendSeconds.innerHTML = seconds; }
   }
-  buttonStart.onclick = () => {
+  buttonStart.onclick = function () {
     clearInterval(Interval);
     Interval = setInterval(startTimer, 10);
   };
